@@ -1,26 +1,26 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
-    name: "vlckit-iptelevision",
+    name: "VLCKitIPTV",
     platforms: [
+        .macOS(.v10_11),
         .iOS(.v9),
         .tvOS(.v11),
-        .macOS(.v10_11),
-        .visionOS(.v1),
-        .watchOS(.v7_4)
+        .watchOS(.v7_4),
+        .visionOS(.v1)
     ],
     products: [
         .library(
-            name: "vlckit-iptelevision",
-            targets: ["vlckit-iptelevision"]
-        ),
+            name: "VLCKitIPTV",
+            targets: ["VLCKitIPTV"]
+        )
     ],
     targets: [
         .binaryTarget(
-            name: "vlckit-iptelevision",
-            url: "https://download.videolan.org/cocoapods/unstable/VLCKit-4.0.0a10-d962e05c-17860384.tar.xz",
-            checksum: "8d3b1f8d1b6e4fc35d45b706a800a424a1b841d2dc5d4229817a3d7a000bf372"
+            name: "VLCKitIPTV",
+            url: "https://github.com/paoloandrea/vckit-package/releases/download/v4.0.0a10/VLCKit.xcframework.zip",
+            checksum: "8add195287f3c5a1a1d6581cf08e2b987c7857814baff819dae4fa071bd3d974"
         )
     ]
 )
