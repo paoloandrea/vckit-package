@@ -13,12 +13,12 @@ let package = Package(
     products: [
         .library(
             name: "VLCKitIPTV",
-            targets: ["VLCKitIPTV"]
+            targets: ["VLCKit"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "VLCKitIPTV",
+            name: "VLCKit",
             url: "https://github.com/paoloandrea/vckit-package/releases/download/v4.0.0a10/VLCKit.xcframework.zip",
             checksum: "8add195287f3c5a1a1d6581cf08e2b987c7857814baff819dae4fa071bd3d974"
         )
